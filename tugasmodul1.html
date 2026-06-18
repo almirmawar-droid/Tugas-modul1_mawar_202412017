@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulir Pendaftaran Mahasiswa Baru</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background-color:#eef0fa;
+    margin:0;
+    padding:30px;
+}
+
+.container{
+    width:600px;
+    margin:auto;
+    text-align:center;
+}
+
+.logo{
+    width:70px;
+}
+
+h1{
+    color:#2f3b8f;
+    margin-bottom:5px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.form-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:left;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+fieldset{
+    border:1px solid #d6d8ef;
+    border-radius:8px;
+    margin-bottom:20px;
+    padding:18px;
+}
+
+legend{
+    color:#4a63d9;
+    font-weight:bold;
+    font-size:12px;
+    letter-spacing:1px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #cfd3ea;
+    border-radius:6px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:80px;
+}
+
+.btn{
+    width:100%;
+    padding:12px;
+    background:#4a63e7;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#364fc7;
+}
+
+.footer{
+    text-align:center;
+    margin-top:20px;
+    font-size:13px;
+}
+
+.footer a{
+    color:#4a63e7;
+    text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Logo Kampus -->
+    <img src="gambar.JPG" alt="Logo Kampus" class="logo">
+
+    <h1>Formulir Pendaftaran Mahasiswa Baru</h1>
+    <p class="subtitle">Isi data diri Anda dengan lengkap dan benar.</p>
+
+    <div class="form-box">
+
+        <form>
+
+            <!-- DATA PRIBADI -->
+            <fieldset>
+                <legend>DATA PRIBADI</legend>
+
+                <label for="nama">Nama Lengkap <span style="color:red">*</span></label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email <span style="color:red">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label>Jenis Kelamin <span style="color:red">*</span></label>
+
+                <input type="radio" id="pria" name="jk" required>
+                <label for="pria" style="display:inline;">Pria</label>
+
+                <input type="radio" id="wanita" name="jk">
+                <label for="wanita" style="display:inline;">Wanita</label>
+
+                <label for="alamat">Alamat Lengkap</label>
+                <textarea id="alamat" name="alamat"></textarea>
+
+            </fieldset>
+
+            <!-- HOBI -->
+            <fieldset>
+                <legend>HOBI</legend>
+
+                <label>Pilih Hobi (boleh lebih dari satu)</label>
+
+                <input type="checkbox" id="membaca">
+                <label for="membaca" style="display:inline;">Membaca</label>
+
+                <input type="checkbox" id="olahraga">
+                <label for="olahraga" style="display:inline;">Olahraga</label>
+
+                <input type="checkbox" id="musik">
+                <label for="musik" style="display:inline;">Musik</label>
+
+                <input type="checkbox" id="coding">
+                <label for="coding" style="display:inline;">Coding</label>
+
+                <input type="checkbox" id="desain">
+                <label for="desain" style="display:inline;">Desain</label>
+
+            </fieldset>
+
+            <!-- JURUSAN -->
+            <fieldset>
+                <legend>JURUSAN</legend>
+
+                <label for="jurusan">Pilih Jurusan <span style="color:red">*</span></label>
+
+                <select id="jurusan" name="jurusan" required>
+                    <option value="">-- Pilih Jurusan --</option>
+                    <option>Teknik Informatika</option>
+                    <option>Manajemen</option>
+                    <option>Akuntansi</option>
+                </select>
+
+            </fieldset>
+
+            <button type="submit" class="btn">
+                Kirim Pendaftaran
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="footer">
+        Informasi lebih lanjut kunjungi
+        <a href="https://www.stitek.ac.id" target="_blank">
+            Website Kampus STITEK
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
